@@ -1,0 +1,12 @@
+logging:
+  level:
+    com:
+      kafka: debug
+server:
+  port: 8081
+spring:
+  kafka:
+    consumer:
+      group-id: "my-consumer"
+      enable-auto-commit: true
+      auto-offset-reset: earliest
